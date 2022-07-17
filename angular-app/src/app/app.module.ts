@@ -7,8 +7,10 @@ import { QuestionDisplayComponent } from './pages/question-display/question-disp
 import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
+import { TeamComponent } from './pages/team/team.component';
+import { TeamCardComponent } from './components/team-card/team-card.component';
 @NgModule({
-  declarations: [AppComponent, QuestionDisplayComponent, FooterComponent],
+  declarations: [AppComponent, QuestionDisplayComponent, FooterComponent, TeamComponent, TeamCardComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
