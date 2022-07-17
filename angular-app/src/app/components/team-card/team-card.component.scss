@@ -1,0 +1,17 @@
+@import "src/styles/color";
+
+mat-card {
+  padding: 30px;
+  margin: 20px;
+  color: $text;
+}
+
+mat-card-content {
+  column-count: 2;
+
+  .member-name {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+}
