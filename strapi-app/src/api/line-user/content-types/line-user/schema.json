@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "line_users",
+  "info": {
+    "singularName": "line-user",
+    "pluralName": "line-users",
+    "displayName": "lineUser",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "display_name": {
+      "type": "string"
+    },
+    "user_id": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "context": {
+      "type": "string",
+      "default": "done"
+    }
+  }
+}
