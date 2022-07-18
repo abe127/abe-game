@@ -27,7 +27,7 @@
     .accordion {
       display: block;
       width: 90%;
-      max-width: 700px;
+      max-width: 800px;
     }
 
     .accordion-item {
@@ -95,6 +95,11 @@
 
       .list {
         column-count: 2;
+        font-size: 1.2rem;
+
+        div {
+          margin-bottom: 10px;
+        }
       }
     }
   }
