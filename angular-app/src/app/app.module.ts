@@ -9,8 +9,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { TeamComponent } from './pages/team/team.component';
 import { TeamCardComponent } from './components/team-card/team-card.component';
+import { ReceptionComponent } from './pages/reception/reception.component';
 @NgModule({
-  declarations: [AppComponent, QuestionDisplayComponent, FooterComponent, TeamComponent, TeamCardComponent],
+  declarations: [AppComponent, QuestionDisplayComponent, FooterComponent, TeamComponent, TeamCardComponent, ReceptionComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
