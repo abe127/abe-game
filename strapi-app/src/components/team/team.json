@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_team_teams",
+  "info": {
+    "displayName": "team",
+    "icon": "users"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "member": {
+      "displayName": "member",
+      "type": "component",
+      "repeatable": true,
+      "component": "member.member"
+    }
+  }
+}
