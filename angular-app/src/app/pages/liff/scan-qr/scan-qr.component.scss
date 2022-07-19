@@ -1,0 +1,28 @@
+@use "src/styles/styles";
+
+.container {
+  @include styles.container;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  .room-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .not-found-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .scan-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+  }
+}
