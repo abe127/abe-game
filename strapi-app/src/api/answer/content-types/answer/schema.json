@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "answers",
+  "info": {
+    "singularName": "answer",
+    "pluralName": "answers",
+    "displayName": "answer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "answer": {
+      "type": "string"
+    },
+    "question_sentence": {
+      "type": "string"
+    },
+    "question_format": {
+      "type": "enumeration",
+      "enum": [
+        "team-unanimity",
+        "team-guess"
+      ]
+    },
+    "line_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::line-user.line-user"
+    },
+    "answer_status": {
+      "type": "string"
+    },
+    "event": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::event.event"
+    }
+  }
+}

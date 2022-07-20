@@ -4,6 +4,7 @@
  * line service.
  */
 
+const axios = require("axios");
 const line = require("@line/bot-sdk");
 const client = new line.Client({
   channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN,
@@ -48,6 +49,7 @@ module.exports = {
     }
   },
 
+<<<<<<< HEAD
 
   async messagingEvent(event) {
     if (!event?.source?.userId) return;
@@ -77,4 +79,30 @@ module.exports = {
       strapi.log.error(error);
     }
   }
+=======
+  async getIdToken(id_token, client_id) {
+    try {
+      const body = new URLSearchParams();
+      body.append("id_token", id_token);
+      body.append("client_id", client_id);
+      const result = await axios.post(
+        "https://api.line.me/oauth2/v2.1/verify",
+        body,
+        {
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        }
+      );
+      return result;
+    } catch (error) {
+      console.log(error);
+      return;
+    }
+  },
+
+  async sendPushMessage(to, messages, notificationDisabled = false) {
+    client.pushMessage(to, messages, notificationDisabled).catch((error) => {
+      console.log(error);
+    });
+  },
+>>>>>>> develop
 };

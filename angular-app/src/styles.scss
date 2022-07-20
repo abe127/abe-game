@@ -8,3 +8,12 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+//progress-spinner-pane
+.cdk-overlay-container {
+  .progress-spinner-pane > .mat-dialog-container {
+    background-color: unset !important;
+    box-shadow: unset !important;
+    color: unset !important;
+  }
+}

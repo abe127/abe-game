@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_member_members",
+  "info": {
+    "displayName": "member",
+    "icon": "user",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "line_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::line-user.line-user"
+    },
+    "point": {
+      "type": "integer"
+    },
+    "answer_status": {
+      "type": "string"
+    }
+  }
+}

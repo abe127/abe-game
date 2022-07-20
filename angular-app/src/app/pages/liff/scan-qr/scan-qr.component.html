@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="room-container" *ngIf="roomInfo">
+    <h1>{{roomInfo.attributes.name}}</h1>
+    <button mat-raised-button color="primary" (click)="join()">この部屋に参加する</button>
+  </div>
+  <div class="not-found-container" *ngIf="!roomInfo">
+    <h2>部屋が見つかりませんでした</h2>
+  </div>
+  <div class="scan-container">
+    <button mat-raised-button color="basic" (click)="scanQr()">QRコードを読み取る</button>
+  </div>
+</div>
+<app-progress-spinner></app-progress-spinner>

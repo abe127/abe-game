@@ -23,6 +23,15 @@
     "context": {
       "type": "string",
       "default": "done"
+    },
+    "answer": {
+      "type": "string"
+    },
+    "room": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::room.room",
+      "inversedBy": "line_users"
     }
   }
 }
