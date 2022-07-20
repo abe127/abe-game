@@ -78,8 +78,8 @@ module.exports = {
     } catch (error) {
       strapi.log.error(error);
     }
-  }
-=======
+  },
+
   async getIdToken(id_token, client_id) {
     try {
       const body = new URLSearchParams();
@@ -104,5 +104,5 @@ module.exports = {
       console.log(error);
     });
   },
->>>>>>> develop
+
 };
