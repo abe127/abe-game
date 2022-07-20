@@ -56,13 +56,8 @@ module.exports = {
                   .query("api::line-user.line-user")
                   .findOne({select: ['context'], where: { user_id: event.source.userId }});
       if(context.context === 'name_setting'){
-        if (event.message.text.length >= 11) {
-          var display_name = event.message.text.substr( 0, 10 );
-        }
-        else{
-          var display_name = event.message.text;
-        }
-        console.log(display_name);
+        const text = event.message.text;
+        const display_name = text.length < 11 ? text : text.substr(0, 10);
         await strapi
           .query("api::line-user.line-user")
           .update({ where: { user_id: event.source.userId } , data: {display_name: display_name, context: 'done'}});
