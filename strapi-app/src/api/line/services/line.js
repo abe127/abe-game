@@ -49,8 +49,6 @@ module.exports = {
     }
   },
 
-<<<<<<< HEAD
-
   async messagingEvent(event) {
     if (!event?.source?.userId) return;
     try {
