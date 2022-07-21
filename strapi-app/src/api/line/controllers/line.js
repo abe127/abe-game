@@ -19,6 +19,11 @@ module.exports = {
           case "unfollow":
             strapi.service("api::line.line").unfollowEvent(event);
             break;
+
+          case "message":
+            strapi.service("api::line.line").messagingEvent(event);
+            break;
+
           default:
             strapi.log.info("Not processing.");
         }
