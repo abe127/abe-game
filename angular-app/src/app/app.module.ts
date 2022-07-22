@@ -14,6 +14,7 @@ import { ReceptionComponent } from './pages/reception/reception.component';
 import { ScanQrComponent } from './pages/liff/scan-qr/scan-qr.component';
 import { ProgressSpinnerComponent } from './components/progress-spinner/progress-spinner.component';
 import { ProgressSpinnerService } from './services/progress-spinner.service';
+import { SelfIntroduceComponent } from './pages/self-introduce/self-introduce.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +25,7 @@ import { ProgressSpinnerService } from './services/progress-spinner.service';
     ReceptionComponent,
     ScanQrComponent,
     ProgressSpinnerComponent,
+    SelfIntroduceComponent,
   ],
   imports: [
     BrowserModule,
